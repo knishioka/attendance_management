@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: attendance_management_development
+  pool: 5
+  username: attendance_management
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: attendance_management_test
+  pool: 5
+  username: attendance_management
+  password:
