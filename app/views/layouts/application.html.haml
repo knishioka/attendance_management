@@ -6,5 +6,6 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-
+    - if current_user
+      = link_to 'Logout', logout_path
     = yield

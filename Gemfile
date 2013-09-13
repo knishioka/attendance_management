@@ -9,8 +9,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'thin', group: :development
-gem 'quiet_assets', group: :developemnt
+gem 'quiet_assets'
 gem 'haml-rails'
+gem 'omniauth'
+gem 'omniauth-github'
 
 group :doc do
   gem 'sdoc', require: false
