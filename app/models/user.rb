@@ -11,8 +11,11 @@ class User < ActiveRecord::Base
   end
 
   def attend!(options)
-    attendances.find_or_initialize_by(working_day: options[:working_day])
-      .update_attributes(working_time: options[:working_time], comment: options[:comment])
+    attendance = attendances.build(working_day: options[:working_day])
+    begin
+      attendance.update_attributes(working_time: options[:working_time], comment: options[:comment])
+    end
+    attendance
   end
 
   def destroy_attend!(attend_id)

@@ -14,6 +14,7 @@ gem 'haml-rails'
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'anjlab-bootstrap-rails', require: 'bootstrap-rails', github: 'anjlab/bootstrap-rails', branch: '3.0.0'
+gem 'rails-backbone'
 
 group :doc do
   gem 'sdoc', require: false
